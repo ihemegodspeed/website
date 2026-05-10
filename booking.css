@@ -1,0 +1,72 @@
+/* Top Navigation Bar */
+.top-nav {
+    background-color: #0d47a1;       /* professional deep blue */
+    padding: 14px 25px;              /* spacing inside the nav */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* subtle shadow */
+    text-align: left;                /* align content to the left */
+}
+
+/* Go Back Link */
+.back-link {
+    color: #ffffff;                  /* white text */
+    text-decoration: none;           /* remove underline */
+    font-weight: 600;                /* bold text */
+    font-size: 1rem;                 /* readable size */
+    padding: 8px 16px;               /* button-like padding */
+    border-radius: 6px;              /* rounded corners */
+    display: inline-block;
+    transition: background 0.3s, transform 0.2s; /* smooth hover effect */
+}
+
+/* Hover Effect */
+.back-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* subtle highlight on hover */
+    transform: translateX(-2px);                /* small slide effect */
+}
+.container {
+    max-width: 750px;
+    margin: 80px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.booking-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0d47a1;
+}
+
+.booking-form {
+    display: grid;
+    gap: 14px;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.checkbox {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.btn.primary {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    background: #0d47a1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn.primary:hover {
+    background: #093170;
+}

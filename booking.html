@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="booking.css">
+    <script src="booking.js"></script>
+    <link rel="shortcut icon" href="image/bee robot.png" type="image/x-icon">
+    <title>Booking</title>
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <a href="index.html" class="back-link">← Go Back</a>
+    </nav>
+
+    <section id="booking" aria-label="Booking & Contact">
+        <div class="container">
+            <h1 class="booking-title">Book a Service / Get a Quote</h1>
+
+           <form id="bookingForm" class="booking-form">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <input type="tel" name="phone" placeholder="Phone number">
+
+                <select name="service" required>
+                    <option value="">Select service</option>
+                    <option>System diagnostics</option>
+                    <option>Software updates</option>
+                    <option>Hardware upgrades</option>
+                    <option>Custom development</option>
+                </select>
+
+                <input type="date" name="date" required>
+                <input type="number" name="quantity" placeholder="How many systems?" required>
+
+                <label class="checkbox">
+                    <input type="checkbox" required>
+                    I agree to be contacted
+                </label>
+
+                <!-- REAL submit button -->
+                <button type="submit" class="btn primary">
+                    Submit & Chat on WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

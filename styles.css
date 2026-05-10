@@ -1,0 +1,126 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1220;
+    color: white;
+}
+
+/* LOADER */
+#loader-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0b1220;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.loader {
+    font-size: 20px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("image/ai-generated.jpg") center/cover no-repeat;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #0d47a1;
+    color: white;
+}
+
+.secondary {
+    border: 2px solid white;
+    color: white;
+}
+.tertiary {
+    background: transparent;
+    border: 2px solid #4da3ff;
+    color: #4da3ff;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* RUBBER TEXT EFFECT */
+.rubber-text span {
+    display: inline-block;
+    animation: bounce 1.2s infinite;
+}
+
+.rubber-text span:nth-child(odd) {
+    animation-delay: 0.1s;
+}
+
+@keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* FOOTER */
+.footer {
+    background: #050814;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container p {
+    margin-top: 8px;
+    opacity: 0.7;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 12px;
+    opacity: 0.5;
+}

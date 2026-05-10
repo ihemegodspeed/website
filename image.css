@@ -1,0 +1,117 @@
+/* PAGE */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #0d47a1;
+    padding: 14px 30px;
+}
+
+header a {
+    color: #fff;
+    font-size: 1.4rem;
+}
+/* Top Navigation */
+.top-nav {
+    background-color: #0d47a1;       /* deep professional blue */
+    padding: 12px 20px;              /* some spacing */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* subtle shadow */
+    text-align: left;                /* align left */
+}
+
+/* Back link */
+.top-nav a {
+    color: #fff;                     /* white text */
+    text-decoration: none;           /* remove underline */
+    font-weight: 600;                /* bold */
+    font-size: 1rem;
+    padding: 6px 12px;               /* button-like padding */
+    border-radius: 6px;              /* smooth corners */
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+.top-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* subtle hover */
+    transform: translateX(-2px);               /* small shift */
+}
+
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.img-title {
+    font-size: 2.2rem;
+    color: #0d47a1;
+    margin-bottom: 30px;
+}
+
+/* SLIDER */
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 500px; /* ⬅ increased height */
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+/* SLIDE TRACK */
+.slider-track {
+    display: flex;
+    align-items: center;
+    width: calc(300px * 9); /* ⬅ image width × total images */
+    animation: scroll 35s linear infinite;
+}
+
+/* IMAGES */
+.slider-track img {
+    width: 400px;      /* ⬅ bigger image */
+    height: 500px;
+    object-fit: cover;
+    margin: 0 16px;
+    border-radius: 16px;
+    transition: transform 0.4s ease;
+}
+
+.slider-track img:hover {
+    transform: scale(1.08);
+}
+
+/* ANIMATION */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-300px * 4));
+    }
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .slider {
+        height: 630px;
+    }
+
+    .slider-track img {
+        width: 220px;
+        height: 620px;
+    }
+
+    .slider-track {
+        width: calc(220px * 9);
+    }
+}

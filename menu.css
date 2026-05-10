@@ -1,0 +1,117 @@
+/* General Reset & Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/* Top Navigation Container */
+.top-nav-container {
+    background-color: #0d47a1;  /* professional deep blue */
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow for depth */
+}
+
+/* Navigation */
+.top-nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Back Link */
+.back-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+.back-link:hover {
+    background-color: rgba(255,255,255,0.15);
+    transform: translateX(-2px);
+}
+
+
+/* Container for Section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Section Header */
+.c {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #0d47a1; /* professional blue */
+    margin-bottom: 12px;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 32px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* Card Styling */
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Card Title */
+.card strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #0d47a1;
+}
+
+/* Card List Items */
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.card li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Responsive Text Alignment */
+@media (max-width: 768px) {
+    .c {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}

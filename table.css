@@ -1,0 +1,117 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    color: #333;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    background-color: #0d47a1;       /* professional deep blue */
+    padding: 15px 30px;              /* spacing inside the nav */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow for depth */
+    text-align: left;                /* align content to the left */
+}
+
+/* Back Link Style */
+.top-nav a {
+    color: #ffffff;                  /* white text */
+    text-decoration: none;           /* remove underline */
+    font-weight: 600;                /* bold text */
+    font-size: 1rem;                 /* readable size */
+    padding: 8px 16px;               /* make it look like a button */
+    border-radius: 6px;              /* smooth corners */
+    display: inline-block;
+    transition: background 0.3s, transform 0.2s; /* smooth hover effect */
+}
+
+/* Hover Effect */
+.top-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* subtle highlight on hover */
+    transform: translateX(-2px);                /* slight sliding effect */
+}
+
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+/* TABLE */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+/* CAPTION */
+.pricing-table caption {
+    caption-side: top;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0d47a1;
+    padding: 20px;
+}
+
+/* HEADER */
+.pricing-table thead {
+    background: #0d47a1;
+    color: #fff;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 18px 22px;
+    text-align: left;
+}
+
+/* BODY ROWS */
+.pricing-table tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: background 0.3s;
+}
+
+.pricing-table tbody tr:hover {
+    background: #f1f6ff;
+}
+
+.pricing-table td:last-child {
+    font-weight: 600;
+    color: #0d47a1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .pricing-table thead {
+        display: none;
+    }
+
+    .pricing-table tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .pricing-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 14px;
+    }
+
+    .pricing-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #555;
+    }
+}

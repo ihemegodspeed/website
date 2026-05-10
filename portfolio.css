@@ -1,0 +1,148 @@
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 50px;
+      background: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #222;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px;
+      background: linear-gradient(135deg, #e3e3ff, #ffe3f3);
+    }
+
+    .hero-text h2 {
+      font-size: 48px;
+      font-weight: bold;
+      animation: fadeInUp 1s ease;
+    }
+
+    .hero-text p {
+      font-size: 22px;
+      margin-top: 10px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .hero img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: float 4s infinite ease-in-out;
+    }
+
+    /* Floating animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    /* Fade up */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0px); }
+    }
+
+    /* Section styling */
+    section {
+      padding: 80px 50px;
+    }
+
+    h2.section-title {
+      font-size: 32px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h2.section-title::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #007bff;
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: 0.4s;
+      animation: fadeInUp 1s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Skills */
+    .skills span {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #fff;
+      margin: 6px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      font-size: 15px;
+      animation: fadeInUp 1s ease;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: white;
+      box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
+      margin-top: 50px;
+    }
